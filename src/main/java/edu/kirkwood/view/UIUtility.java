@@ -91,6 +91,18 @@ public class UIUtility {
     }
 
     /**
+     * Prints the Strings from a provided array in a list format.
+     *
+     * @param listItems The array of Strings to print
+     */
+    public static void printList(String[] listItems) {
+        System.out.println();
+        for(int i = 0; i < listItems.length; i++){
+            System.out.println("\t" + listItems[i]);
+        }
+    }
+
+    /**
      * Creates a table separator using the supplied column widths.
      *
      * @param columnWidths widths of the table columns
