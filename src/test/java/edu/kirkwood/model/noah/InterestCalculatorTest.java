@@ -1,6 +1,5 @@
-package edu.kirkwood.model;
+package edu.kirkwood.model.noah;
 
-import edu.kirkwood.model.noah.InterestCalculator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
