@@ -23,7 +23,7 @@ public class RespiratoryRateCalculator {
     private static final String INVALID_TIME_FORMAT_MESSAGE =
             "Enter a whole number of seconds, such as 60.";
 
-    private final RespiratoryHistory history = new RespiratoryHistory();
+    private static final RespiratoryHistory history = new RespiratoryHistory();
 
     /**
      * Calculates the respiratory rate from the number of breaths
@@ -41,7 +41,7 @@ public class RespiratoryRateCalculator {
     /**
      * Starts the respiratory rate calculator and handles user input.
      */
-    public void start() {
+    public static void start() {
         Messages.respiratoryGreet();
         boolean running = true;
         while (running) {
@@ -99,7 +99,7 @@ public class RespiratoryRateCalculator {
         Messages.respiratoryGoodbye();
     }
 
-    private void displayHistory() {
+    private static void displayHistory() {
         int measurementCount = history.getMeasurementCount();
         if (measurementCount > 0) {
             System.out.println("\n--- Respiratory Measurement History ---");

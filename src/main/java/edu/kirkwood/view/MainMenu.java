@@ -1,5 +1,6 @@
 package edu.kirkwood.view;
 
+import edu.kirkwood.controller.makayla.RespiratoryRateCalculator;
 import edu.kirkwood.controller.marc.FractionCalculator;
 import edu.kirkwood.controller.ryan.LoanCalculator;
 import edu.kirkwood.controller.noah.InterestCalculatorController;
@@ -19,7 +20,8 @@ public class MainMenu {
             "Xavian's Half Life Calculator",
             "Masean's GPA Calculator",
             "Noah's Interest Calculator",
-            "Ryan's Amortization Loan Calculator", 
+            "Ryan's Amortization Loan Calculator",
+            "Makayla's Respiratory Rate Calculator",
             "Quit"
           };
         while(true) {
@@ -40,6 +42,9 @@ public class MainMenu {
                     break;
                 case 5:
                     LoanCalculator.start();
+                    break;
+                case 6:
+                    RespiratoryRateCalculator.start();
                     break;
                 default:
                     return;
