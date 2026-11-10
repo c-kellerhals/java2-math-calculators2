@@ -5,6 +5,8 @@ import edu.kirkwood.model.clapton.Number;
 
 import static edu.kirkwood.model.clapton.Number.*;
 import static edu.kirkwood.view.Helpers.*;
+import static edu.kirkwood.view.Messages.baseConversionGoodbye;
+import static edu.kirkwood.view.Messages.baseConversionGreet;
 import static edu.kirkwood.view.UIUtility.displayError;
 import static edu.kirkwood.view.UIUtility.pressEnterToContinue;
 import static edu.kirkwood.view.UserInput.getInt;
