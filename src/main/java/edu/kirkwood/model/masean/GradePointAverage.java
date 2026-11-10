@@ -1,4 +1,4 @@
-package edu.kirkwood.model.Masean;
+package edu.kirkwood.model.masean;
 
 import java.util.*;
 

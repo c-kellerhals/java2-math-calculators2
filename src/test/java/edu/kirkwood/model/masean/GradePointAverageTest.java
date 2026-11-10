@@ -1,4 +1,4 @@
-package edu.kirkwood.model.Masean;
+package edu.kirkwood.model.masean;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

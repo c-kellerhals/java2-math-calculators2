@@ -50,7 +50,61 @@ public class Messages {
      */
     public static void respiratoryGoodbye() {
         displayMessage("Thank you for using Makayla's Respiratory Calculator");
+    }
 
+    public static void loanGreet() {
+        displayMessage("Welcome to Ryan's Amortization Loan Calculator");
+    }
+
+    public static void  loanGoodbye() {
+        displayMessage("Thank you for using Ryan's Amortization Loan Calculator");
+    }
+  
+    /**
+     * Displays instructions for using the interest calculator.
+     */
+    public static void interestGreet() {
+        displayMessage("Welcome to Noah's Interest Calculator");
+        System.out.println("\nThis program calculates how much interest will be earned from a investment. Pick an investment type:\n");
+    }
+
+    /**
+     * Displays the interest calculator's farewell message.
+     */
+    public static void interestGoodbye() {
+        displayMessage("Thank you for using Noah's Interest Calculator.");
+    }
+
+    /**
+     * Displays instructions for using the GPA calculator.
+     */
+    public static void GPAGreet() {
+        displayMessage("Welcome to Masean's GPA Calculator");
+        System.out.println("When prompted, carefully read the question and enter the requested information.\n");
+    }
+
+    /**
+     * Displays the GPA calculator's farewell message.
+     */
+    public static void GPAGoodbye() {
+        displayMessage("Thank you for using the GPA Calculator");
+    }
+
+    /**
+     * Displays the Half Life calculator's greeting message.
+     */
+    public static void halfLifeHello() {
+        System.out.println();
+        displayMessage("Welcome to Xavian's Half-Life Calculator!");
+        System.out.println("Select an option below to start:");
+    }
+
+    /**
+     * Displays the half life calculator's farewell message.
+     */
+    public static void halfLifeGoodbye() {
+        System.out.println();
+        displayMessage("Thank you for using Xavian's Half-Life Calculator.");
     }
 }
 
