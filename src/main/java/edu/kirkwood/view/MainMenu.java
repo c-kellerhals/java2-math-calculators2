@@ -2,6 +2,7 @@ package edu.kirkwood.view;
 
 import edu.kirkwood.controller.marc.FractionCalculator;
 import edu.kirkwood.controller.masean.GPACalculator;
+import edu.kirkwood.controller.riona.AngleCalculator;
 
 import static edu.kirkwood.view.UIUtility.printMenu;
 import static edu.kirkwood.view.UserInput.getInt;
@@ -11,7 +12,12 @@ public class MainMenu {
      * Displays the main menu and processes selections until the user quits.
      */
     public static void show() {
-        String[] menuItems = {"Marc's Fraction Calculator", "Masean's GPA Calculator", "Quit"};
+        String[] menuItems = {
+                "Marc's Fraction Calculator",
+                "Masean's GPA Calculator",
+                "Riona's Trigonometric Functions Calculator",
+                "Quit"
+        };
         while(true) {
             printMenu("Main Menu", menuItems);
             int choice = getInt("Choose an option", true, 1, menuItems.length);
@@ -21,6 +27,9 @@ public class MainMenu {
                     break;
                 case 2:
                     GPACalculator.start();
+                    break;
+                case 3:
+                    AngleCalculator.start();
                     break;
                 default:
                     return;
