@@ -3,6 +3,7 @@ package edu.kirkwood.view;
 import edu.kirkwood.controller.makayla.RespiratoryRateCalculator;
 import edu.kirkwood.controller.issouf.RetirementCalculator;
 import edu.kirkwood.controller.marc.FractionCalculator;
+import edu.kirkwood.controller.riona.AngleCalculator;
 import edu.kirkwood.controller.ryan.LoanCalculator;
 import edu.kirkwood.controller.noah.InterestCalculatorController;
 import edu.kirkwood.controller.masean.GPACalculator;
@@ -25,7 +26,8 @@ public class MainMenu {
             "Ryan's Amortization Loan Calculator",
             "Makayla's Respiratory Rate Calculator",
             "Bailey's Astro OEV Calculator", 
-            "Issouf's Retirement Calculator", 
+            "Issouf's Retirement Calculator",
+            "Riona's Trigonomentric Functions Calculator",
             "Evan's Doomsday Calculator",
             "Quit"
           };
@@ -58,6 +60,9 @@ public class MainMenu {
                     RetirementCalculator.start();
                     break;
                 case 9:
+                    AngleCalculator.start();
+                    break;
+                case 10:
                     DoomsdayCalculatorController.start();
                     break;
                 default:

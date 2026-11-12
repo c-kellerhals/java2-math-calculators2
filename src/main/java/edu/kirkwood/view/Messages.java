@@ -153,6 +153,31 @@ public class Messages {
     }
 
     /**
+     * Displays instructions for using the Trigonometric Functions calculator.
+     */
+    public static void trigFuncGreet(){
+        displayMessage("Welcome to Riona's Trigonometric Functions Calculator");
+        System.out.println("Enter an angle value in degrees. Your value should contain only digits and decimal points.");
+        System.out.println("Example: 60.5");
+    }
+
+    /**
+     * Displays the Trigonometric Functions calculator's farewell message
+     */
+    public static void trigFuncGoodbye(){
+        displayMessage("Thank you for using Riona's Trigonometric Functions Calculator");
+    }
+
+    /**
+     * Prints a plain string with no asterisks.
+     *
+     * @param message The message to print to string
+     */
+    public static void showString(String message){
+        System.out.println(message);
+    }
+    
+    /**
      * Displays instructions and greeting for using the Doomsday calculator.
      */
     public static void doomsdayGreet() {
