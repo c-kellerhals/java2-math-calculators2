@@ -153,6 +153,21 @@ public class Messages {
     }
 
     /**
+     * Displays instructions for using the base conversion calculator.
+     */
+    public static void baseConversionGreet() {
+        displayMessage("Welcome to Clapton's Base Conversion Calculator");
+        System.out.println("First, you will be asked for a number base.\nThen, a value in that base.\nFinally, you will be asked for a base you wish to convert to.");
+        System.out.println("Example: Base 10, value of 10, to base 2\n");;
+    }
+    /**
+     * Displays the base conversion calculator's farewell message.
+     */
+    public static void baseConversionGoodbye() {
+        displayMessage("Thank you for using Clapton's Base Conversion Calculator");
+    }
+  
+    /**
      * Displays instructions for using the Trigonometric Functions calculator.
      */
     public static void trigFuncGreet(){

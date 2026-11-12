@@ -1,5 +1,6 @@
 package edu.kirkwood.view;
 
+import edu.kirkwood.controller.clapton.BaseConversionCalculator;
 import edu.kirkwood.controller.makayla.RespiratoryRateCalculator;
 import edu.kirkwood.controller.issouf.RetirementCalculator;
 import edu.kirkwood.controller.marc.FractionCalculator;
@@ -29,6 +30,7 @@ public class MainMenu {
             "Issouf's Retirement Calculator",
             "Riona's Trigonomentric Functions Calculator",
             "Evan's Doomsday Calculator",
+            "Clapton's Base Conversion Calculator",
             "Quit"
           };
         while(true) {
@@ -64,6 +66,9 @@ public class MainMenu {
                     break;
                 case 10:
                     DoomsdayCalculatorController.start();
+                    break;
+                case 11:
+                    BaseConversionCalculator.start();
                     break;
                 default:
                     return;
