@@ -35,6 +35,24 @@ public class Messages {
     }
 
     /**
+     * Displays instructions for the respiratory calculator.
+     */
+    public static void respiratoryGreet() {
+        displayMessage("Welcome to Makayla's Respiratory Calculator");
+        System.out.println("Calculate respiratory rate using the number of breaths counted");
+        System.out.println("and the time in seconds.");
+        System.out.println("Example: 12 breaths in 60 seconds = 12 breaths per minute.\n");
+        System.out.println("Enter '0' when finished to view your measurement history.\n");
+    }
+
+    /**
+     * Displays the respiratory calculator's farewell message
+     */
+    public static void respiratoryGoodbye() {
+        displayMessage("Thank you for using Makayla's Respiratory Calculator");
+    }
+  
+    /**
      * Displays the retirement calculator welcome message.
      */
     public static void retirementGreet() {
@@ -169,3 +187,4 @@ public class Messages {
         displayMessage("Thank you for using Xavian's Half-Life Calculator.");
     }
 }
+
