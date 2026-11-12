@@ -35,6 +35,24 @@ public class Messages {
     }
 
     /**
+     * Displays instructions for the respiratory calculator.
+     */
+    public static void respiratoryGreet() {
+        displayMessage("Welcome to Makayla's Respiratory Calculator");
+        System.out.println("Calculate respiratory rate using the number of breaths counted");
+        System.out.println("and the time in seconds.");
+        System.out.println("Example: 12 breaths in 60 seconds = 12 breaths per minute.\n");
+        System.out.println("Enter '0' when finished to view your measurement history.\n");
+    }
+
+    /**
+     * Displays the respiratory calculator's farewell message
+     */
+    public static void respiratoryGoodbye() {
+        displayMessage("Thank you for using Makayla's Respiratory Calculator");
+    }
+  
+    /**
      * Displays the retirement calculator welcome message.
      */
     public static void retirementGreet() {
@@ -158,6 +176,24 @@ public class Messages {
     public static void showString(String message){
         System.out.println(message);
     }
+    
+    /**
+     * Displays instructions and greeting for using the Doomsday calculator.
+     */
+    public static void doomsdayGreet() {
+        displayMessage("Welcome to Evan's Doomsday Calculator");
+        System.out.println("Using Conway’s Doomsday algorithm, this calculator determines the day of the week for " +
+                "any given date and shows the steps used to calculate it.");
+        System.out.println("Enter a date in the format Month/Day/Year. For example, enter 4/4/2021 or 1/1/1.");
+    }
+
+    /**
+     * Displays the Doomsday calculator's farewell message.
+     */
+    public static void doomsdayGoodbye() {
+        System.out.println();
+        displayMessage("Thank you for using Evan's Doomsday Calculator");
+    }
 
     /**
      * Displays the Half Life calculator's greeting message.
@@ -176,3 +212,4 @@ public class Messages {
         displayMessage("Thank you for using Xavian's Half-Life Calculator.");
     }
 }
+
