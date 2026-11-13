@@ -1,5 +1,6 @@
 package edu.kirkwood.view;
 
+import java.io.IOException;
 import java.text.NumberFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -96,4 +97,34 @@ public class Helpers {
         return (date.isEqual(startDate) || date.isAfter(startDate)) &&
                 (date.isEqual(endDate) || date.isBefore(endDate));
     }
+
+    // Source - https://stackoverflow.com/a/32295974
+    // Posted by satish, modified by community. See post 'Timeline' for change history
+    // Retrieved 2026-10-09, License - CC BY-SA 4.0
+    /**
+     * Clears the console screen using ANSI escape codes.
+     * Note: This method may not work in all environments (e.g., some IDEs).
+     */
+    public static void clearScreenNonWindows() {
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
+    }
+
+    /**
+     * Clears the console screen on Windows systems.
+     */
+    public static void clearScreenWindows() {
+        try {
+            String os = System.getProperty("os.name");
+
+            if (os.contains("Windows")) {
+                new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+            } else {
+                new ProcessBuilder("clear").inheritIO().start().waitFor();
+            }
+        } catch (IOException | InterruptedException e) {
+            System.err.println("Could not clear console: " + e.getMessage());
+        }
+    }
+
 }

@@ -35,6 +35,24 @@ public class Messages {
     }
 
     /**
+     * Displays instructions for the respiratory calculator.
+     */
+    public static void respiratoryGreet() {
+        displayMessage("Welcome to Makayla's Respiratory Calculator");
+        System.out.println("Calculate respiratory rate using the number of breaths counted");
+        System.out.println("and the time in seconds.");
+        System.out.println("Example: 12 breaths in 60 seconds = 12 breaths per minute.\n");
+        System.out.println("Enter '0' when finished to view your measurement history.\n");
+    }
+
+    /**
+     * Displays the respiratory calculator's farewell message
+     */
+    public static void respiratoryGoodbye() {
+        displayMessage("Thank you for using Makayla's Respiratory Calculator");
+    }
+  
+    /**
      * Displays the retirement calculator welcome message.
      */
     public static void retirementGreet() {
@@ -135,6 +153,46 @@ public class Messages {
     }
 
     /**
+     * Displays instructions for using the base conversion calculator.
+     */
+    public static void baseConversionGreet() {
+        displayMessage("Welcome to Clapton's Base Conversion Calculator");
+        System.out.println("First, you will be asked for a number base.\nThen, a value in that base.\nFinally, you will be asked for a base you wish to convert to.");
+        System.out.println("Example: Base 10, value of 10, to base 2\n");;
+    }
+    /**
+     * Displays the base conversion calculator's farewell message.
+     */
+    public static void baseConversionGoodbye() {
+        displayMessage("Thank you for using Clapton's Base Conversion Calculator");
+    }
+  
+    /**
+     * Displays instructions for using the Trigonometric Functions calculator.
+     */
+    public static void trigFuncGreet(){
+        displayMessage("Welcome to Riona's Trigonometric Functions Calculator");
+        System.out.println("Enter an angle value in degrees. Your value should contain only digits and decimal points.");
+        System.out.println("Example: 60.5");
+    }
+
+    /**
+     * Displays the Trigonometric Functions calculator's farewell message
+     */
+    public static void trigFuncGoodbye(){
+        displayMessage("Thank you for using Riona's Trigonometric Functions Calculator");
+    }
+
+    /**
+     * Prints a plain string with no asterisks.
+     *
+     * @param message The message to print to string
+     */
+    public static void showString(String message){
+        System.out.println(message);
+    }
+    
+    /**
      * Displays instructions and greeting for using the Doomsday calculator.
      */
     public static void doomsdayGreet() {
@@ -169,3 +227,4 @@ public class Messages {
         displayMessage("Thank you for using Xavian's Half-Life Calculator.");
     }
 }
+

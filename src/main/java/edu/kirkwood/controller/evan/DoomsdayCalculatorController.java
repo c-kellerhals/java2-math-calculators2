@@ -62,7 +62,7 @@ public class DoomsdayCalculatorController {
      */
     public static String getDate() {
         System.out.println();
-        return getString("Enter a date (or press Enter to quit) [Month/Day/Year]", true);
+        return getString("Enter a date (or press Enter to quit) [Month/Day/Year]", false);
     }
 
     /**
